@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Hotel</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Bem-vindos ao Hotel Paraíso</h1>
+        <form action="reserve.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="room_type">Tipo de Quarto:</label>
+            <select id="room_type" name="room_type" required>
+                <option value="Solteiro">Solteiro</option>
+                <option value="Casal">Casal</option>
+                <option value="Duplo">Duplo</option>
+                <option value="Triplo">Triplo</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="check_in">Data de Entrada:</label>
+            <input type="date" id="check_in" name="check_in" required>
+
+            <label for="check_out">Data de Saída:</label>
+            <input type="date" id="check_out" name="check_out" required>
+
+            <label>
+                <input type="checkbox" id="breakfast" name="breakfast">
+                Café da Manhã
+            </label>
+
+            <label>
+                <input type="checkbox" id="parking" name="parking">
+                Estacionamento
+            </label>
+
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+</body>
+</html>
